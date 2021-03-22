@@ -18,11 +18,20 @@ public class TransposeMatriks {
       }
     }
     
+    System.out.println("Hasil matriks: ");
+    for(i = 0; i < m; i++){
+      for(j = 0; j< n; j++){
+        System.out.print(matriks[i][j] + "\t");
+      }
+      System.out.println();
+    }
+    
     for(i = 0; i < m; i++){
       for(j = 0; j< n; j++){
         transpose[j][i] = matriks[i][j];
       }
     }
+    
     System.out.println("Hasil transpose matriks: ");
     for(i = 0; i < n; i++){
       for(j = 0; j< m; j++){
